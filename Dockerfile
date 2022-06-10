@@ -14,7 +14,7 @@ RUN npm run start:prod
 EXPOSE 4000
 
 # start the app on Production
-CMD ["npm","run", "start:prod"]
+CMD ["npm","run", "start"]
 
 # start the app on Develop
 # CMD ["yarn", "start:dev"]

@@ -4,12 +4,17 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm
+RUN yarn
 
 COPY . .
 
 # Production
-RUN npm run start:prod
+RUN yarn build
 
-EXPOSE 4000
+EXPOSE 5000
 
+# start the app on Production
+CMD ["yarn", "start"]
+
+# start the app on Develop
+# CMD ["yarn", "start:dev"]

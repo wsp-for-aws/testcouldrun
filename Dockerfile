@@ -9,12 +9,12 @@ RUN npm
 COPY . .
 
 # Production
-RUN npm run build
+RUN npm run start:prod
 
 EXPOSE 4000
 
 # start the app on Production
-CMD ["npm", "start"]
+CMD ["npm","run", "start:prod"]
 
 # start the app on Develop
 # CMD ["yarn", "start:dev"]

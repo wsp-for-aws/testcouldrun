@@ -11,7 +11,7 @@ COPY . .
 # Production
 RUN yarn build
 
-EXPOSE 5000
+EXPOSE 3000
 
 # start the app on Production
 CMD ["yarn", "start"]
